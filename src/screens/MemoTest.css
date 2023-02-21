@@ -1,0 +1,21 @@
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+  gap: 25px;
+}
+
+li {
+  border: 1px solid #666;
+  padding: 11px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: rotate(4deg);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
