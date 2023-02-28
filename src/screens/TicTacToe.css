@@ -1,0 +1,65 @@
+* {
+  --cellWidthHeight: 130px;
+}
+
+.cellsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, var(--cellWidthHeight));
+  justify-content: center;
+}
+
+.cell {
+  width: var(--cellWidthHeight);
+  height: var(--cellWidthHeight);
+  border: 2px solid #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 67px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.ticTitle {
+  font-size: 43px;
+  color: #e9f17df2;
+  font-weight: 900;
+}
+
+.ticTurn {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #b3d1b0;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.resultContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.resultMessage {
+  color: #b3d1b0;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.resultButton {
+  background-color: #b3d1b0;
+  color: #444;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 800;
+  border: none;
+}
+
+.resultButton:hover {
+  transform: perspective(1px) scale(1.02);
+}
